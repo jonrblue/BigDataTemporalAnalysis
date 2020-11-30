@@ -1,7 +1,7 @@
 Week of November 23rd
-Complete the manual inspection of the data sets.
-Complete the Datamart Profiler analysis of the data sets.
-Write the script and run it on at least one data set
+Complete the manual inspection of the data sets. - DONE
+Complete the Datamart Profiler analysis of the data sets. - DONE
+Write the script and run it on at least one data set - NOT DONE
 
 Week of November 30th
 Run the script on the remaining data sets.
