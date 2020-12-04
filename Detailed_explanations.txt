@@ -1,0 +1,65 @@
+Here are all possible detailed issues that we will address based on our oberservations of Auctus's performance 
+on the 101 datasets we browsed through. Each of this issue will be used to generate a special function to solve 
+that edge cases. In the end, we combine them together with the basic_profiling.py file.
+
+(1) datamart_profiler only tags a temporal column if the data represents a specific moment in time(like year:2020, but not October 3 since the year is unknown).
+Thus, we have a order of year-month-day-hour-minite-second, and only all previous terms are detected when we treat the columns having temporal data.
+To achieve this, we just need to add an extra layer to bypass this logic and detect all possible terms without needing to be a specific moment.
+Thus is usedful when a complete timestamp is spreaded into multiple columns.
+
+For Hire Vehicles (FHV) - Active
+For Hire Vehicles (FHV) - Active Drivers
+Motor Vehicle Collisions - Crashes
+Medallion Drivers - Active
+Street Hail Livery (SHL) Drivers - Active
+Medallion Vehicles - Authorized
+NYPD Complaint Data Historic
+Street Hail Livery (SHL) Permits
+OATH Hearings Division Case Status
+NYPD Complaint Data Current (Year To Date)
+FHV Base Aggregate Report
+Medallion Vehicles - Inactive
+
+
+(2)Medallion Vehicles - Authorized: Model year?
+
+
+(3)Street Hail Livery (SHL) Permits: Vehicle year tag and actual data format conflicts?
+
+
+(4)Civil List: calenday year?
+
+
+(5)DOB ECB Violations: Served Data?
+
+
+(6)The actual temporal data is accompanied by natural language texts.We could potentially combine 
+column names with whether the data strings contain datetime format substring. Along with a threshold,
+the false positive rate might not be that high.
+
+Air Quality
+
+
+(7)The actual temporal data is represented by a range(like year 2005-2007),not a specific moment.
+We need to add a special regular expression to represent datetime ranges along with a threshold.
+
+Air Quality
+
+
+(8)Popular Baby Names: Year of Birth
+
+
+(9 Probably has something to do with too many invalid entries?
+
+Parking Violations Issued - Fiscal Year 2021
+Medallion Vehicles - Inactive:Expiration Date
+
+
+(10)Medallion Vehicles - Inactive: Model Year?
+
+
+(11)Open Streets Locations: time columns not part of a complete timestamp(This is a very special and 
+interesting case!!!)
+
+
+To be continued
