@@ -1,0 +1,12 @@
+Number of columns:  96
+Number of temporal columns: 10
+latest_action_date
+pre__filing_date
+paid
+fully_paid
+assigned
+approved
+fully_permitted
+dobrundate
+signoff_date
+special_action_date
