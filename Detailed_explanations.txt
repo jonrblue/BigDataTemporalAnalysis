@@ -19,18 +19,10 @@ OATH Hearings Division Case Status
 NYPD Complaint Data Current (Year To Date)
 FHV Base Aggregate Report
 Medallion Vehicles - Inactive
-
-
-(2)Medallion Vehicles - Authorized: Model year?
-
-
-(3)Street Hail Livery (SHL) Permits: Vehicle year tag and actual data format conflicts?
-
-
-(4)Civil List: calenday year?
-
-
-(5)DOB ECB Violations: Served Data?
+CURRENT BASES
+NYPD Shooting Incident Data
+Workforce1 Recruitment Events
+2019 DOE High School Directory (8:20am)
 
 
 (6)The actual temporal data is accompanied by natural language texts.We could potentially combine 
@@ -41,25 +33,29 @@ Air Quality
 
 
 (7)The actual temporal data is represented by a range(like year 2005-2007),not a specific moment.
-We need to add a special regular expression to represent datetime ranges along with a threshold.
+We may need to add a special regular expression to represent datetime ranges along with a threshold.
 
 Air Quality
+Queens Library Branches
 
 
-(8)Popular Baby Names: Year of Birth
+(9 Probably has something to do with too many invalid entries or same formats?
+
+Medallion Vehicles - Inactive:Expiration Date: 
+M/WBE,LBE...: Cert_Renewal_Date: empty entries + dublicate timestamps in one entry
 
 
-(9 Probably has something to do with too many invalid entries?
 
-Parking Violations Issued - Fiscal Year 2021
-Medallion Vehicles - Inactive:Expiration Date
+(11)Open Streets Locations: extreme edge case: multiple times associated with days of the week.
 
 
-(10)Medallion Vehicles - Inactive: Model Year?
-
-
-(11)Open Streets Locations: time columns not part of a complete timestamp(This is a very special and 
-interesting case!!!)
-
-
-To be continued
+(13) Columns treated as numeric first
+J-51: two years columns treated as numeric instead of year(temporal)
+2018 central park Squirrel Census - Squirrel Data: actual timestamp without "-" treated as number
+Expense Budget: Fiscal year
+Medallion Vehicles - Inactive: Model Year
+Parking Violations Issued - Fiscal Year 
+Popular Baby Names: Year of Birth
+Civil List: calenday year
+DOB ECB Violations: Served Data
+Medallion Vehicles - Authorized: Model year
