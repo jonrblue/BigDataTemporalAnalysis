@@ -1,0 +1,11 @@
+Number of columns:  41
+Number of temporal columns: 9
+inspectiondate
+approveddate
+originalcertifybydate
+originalcorrectbydate
+newcertifybydate
+newcorrectbydate
+certifieddate
+novissueddate
+currentstatusdate

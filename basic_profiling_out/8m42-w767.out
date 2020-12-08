@@ -1,0 +1,7 @@
+Number of columns:  29
+Number of temporal columns: 5
+incident_datetime
+first_assignment_datetime
+first_activation_datetime
+first_on_scene_datetime
+incident_close_datetime
