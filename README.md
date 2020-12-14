@@ -8,12 +8,3 @@ This is the script running basic datamart profiler. Due to unidentified installa
 enhanced_profiling.py: 
 This is the script of running improved version of datamart profiler. We could still run the scripts directly in bash or any shell: python3 enhanced_profiling.py path_to_dataset. It generates similiar output format like basic_profiling.py.
 
-converter.py:
-
-downloader.py
-
-main.py:
-
-main_plots.py:
-
-main_re.py
